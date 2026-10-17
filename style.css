@@ -1,0 +1,242 @@
+/* ===== Root color dan variabel ===== */
+:root {
+    --bg-start: #ffecd2;
+    --bg-end: #fcb69f;
+    --card-bg: #ffffff;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --accent: #ff6b6b;
+    --accent-soft: #ffe3e3;
+    --border: #fbc531;
+    --code-bg: #2d3436;
+    --code-text: #00cec9;
+    --success: #00b894;
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+body {
+    background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.main-header {
+    background-color: #ffffff;
+    color: #0f172a;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-header p {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    color: #64748b;
+    letter-spacing: 1px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--text-main);
+    font-size: 20px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.pink-gradient {
+    background: linear-gradient(135deg, rgba(244, 114, 182, 0.15), rgba(192, 132, 252, 0.15));
+    border-left: 4px solid #f472b6;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.pink-gradient h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #f472b6;
+}
+
+.pink-gradient ul, .info-box ul {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--text-main);
+    font-size: 14px;
+}
+
+.pink-gradient li, .info-box li {
+    margin-bottom: 6px;
+}
+
+.code-block {
+    background-color: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    color: #38bdf8;
+    margin: 10px 0;
+}
+
+.dark-code {
+    background-color: #090d16;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.preview-box {
+    background-color: #ffffff;
+    color: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.preview-box h1 {
+    font-size: 22px;
+    border: none;
+    margin: 5px 0;
+}
+
+.preview-box h2 {
+    font-size: 18px;
+    border: none;
+    margin: 5px 0;
+    color: #333;
+}
+
+.preview-box p {
+    color: #333;
+}
+
+.form-preview {
+    background-color: #ffffff;
+    color: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.btn-submit {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-submit:hover {
+    background-color: #1d4ed8;
+}
+
+.footer-card {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border: 1px solid #60a5fa;
+}
+
+.footer-card h2 {
+    margin-top: 0;
+    border: none;
+    color: #ffffff;
+}
+
+.footer-note {
+    font-size: 12px;
+    color: #bfdbfe;
+    margin-top: 15px;
+}
+
+.sub-section {
+    margin-top: 15px;
+}
+
+.sub-section h4 {
+    margin-bottom: 5px;
+    color: var(--text-main);
+}

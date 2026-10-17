@@ -1,0 +1,14 @@
+/* Aturan Selector Golf */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.target {
+    color: green;
+    font-weight: bold;
+}
+
+ul .item.highlight {
+    background-color: yellow;
+}
